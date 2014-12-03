@@ -1,0 +1,20 @@
+<template name="layout">
+	{{#ContainerSurface size="[undefined,undefined]" overflow="hidden"}}
+		{{> menu}}
+		{{> RenderController size="[undefined,undefined]" template="layoutContent"}}
+	{{/ContainerSurface}}
+</template>
+
+
+<template name="layoutContent">
+	{{>yield}}
+</template>
+
+
+
+<template name="menu">
+	{{#Surface size="[260,undefined]" translate="[0,0, -100]" class="green-bg"}}
+		Menu
+	{{/Surface}}
+
+</template>

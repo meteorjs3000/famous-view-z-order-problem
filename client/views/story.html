@@ -1,0 +1,20 @@
+<template name="story">
+	{{#HeaderFooterLayout size="[undefined,undefined]" headerSize="64" footerSize="0"}}
+
+		{{#Surface target="header" size="[undefined,64]" translate="[0,0,100]" class="header"}}
+			{{> header}}
+		{{/Surface}}
+
+
+
+		{{#View size="[undefined,undefined]" target="content" translate="[0,0,0]"}}
+		
+			{{#Surface size="[undefined, undefined]" translate="[0,0,0]" class="red-bg"}}Something	{{/Surface}}
+			{{#Scrollview size="[undefined,undefined]" translate="[0,0,0]"}}
+				{{> Surface size="[undefined, 100]" translate="[0,100,0]" class="blue-bg" template="categoriesContent"}}
+			{{/Scrollview}}
+
+		{{/View}}
+
+	{{/HeaderFooterLayout}}
+</template>
